@@ -114,7 +114,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                   },
                 },
                 enable: false,
-                maxSpeed: 20,
+                maxSpeed: 5,
                 mode: "bounce",
                 overlap: {
                   enable: true,
@@ -127,7 +127,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                   h: {
                     count: 0,
                     enable: false,
-                    speed: 5,
+                    speed: 1,
                     decay: 0,
                     delay: 0,
                     sync: true,
@@ -136,7 +136,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                   s: {
                     count: 0,
                     enable: false,
-                    speed: 5,
+                    speed: 1,
                     decay: 0,
                     delay: 0,
                     sync: true,
@@ -145,7 +145,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                   l: {
                     count: 0,
                     enable: false,
-                    speed: 5,
+                    speed: 1,
                     decay: 0,
                     delay: 0,
                     sync: true,
@@ -182,13 +182,13 @@ export const SparklesCore = (props: ParticlesProps) => {
                 decay: 0,
                 distance: {},
                 direction: "none",
-                drift: 2,
+                drift: 0,
                 enable: true,
                 gravity: {
-                  acceleration: 9.81,
-                  enable: false,
-                  inverse: false,
-                  maxSpeed: 10,
+                  acceleration: 9.8,
+                  enable: true,
+                  inverse: true,
+                  maxSpeed: 2,
                 },
                 path: {
                   clamp: true,
@@ -205,7 +205,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 size: false,
                 speed: {
                   min: 0.1,
-                  max: 0.4,
+                  max: 0,
                 },
                 spin: {
                   acceleration: 0,
@@ -214,7 +214,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 straight: false,
                 trail: {
                   enable: false,
-                  length: 20,
+                  length: 10,
                   fill: {},
                 },
                 vibrate: true,
@@ -240,7 +240,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 animation: {
                   count: 0,
                   enable: true,
-                  speed: speed || 4,
+                  speed: 0.1,
                   decay: 0,
                   delay: 0,
                   sync: false,
@@ -265,7 +265,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 close: true,
                 fill: true,
                 options: {},
-                type: "triangle",
+                type: 'circle',
               },
               size: {
                 value: {
@@ -321,7 +321,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                   value: 0,
                 },
                 mode: "vertical",
-                speed: 15,
+                speed: 0,
               },
               tilt: {
                 value: 0,
@@ -336,18 +336,18 @@ export const SparklesCore = (props: ParticlesProps) => {
               },
               twinkle: {
                 lines: {
-                  enable: false,
-                  frequency: 0.05,
+                  enable: true,
+                  frequency: 0.1,
                   opacity: 1,
                 },
                 particles: {
-                  enable: false,
+                  enable: true,
                   frequency: 0.05,
                   opacity: 1,
                 },
               },
               wobble: {
-                distance: 5,
+                distance: 1,
                 enable: false,
                 speed: {
                   angle: 50,
