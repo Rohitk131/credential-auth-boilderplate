@@ -1,7 +1,8 @@
-import LoginCard from '@/components/LoginCard';
+import LoginCard from '@/components/LoginSection';
+
 export default function Login() {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <main className="">
         <LoginCard/>
       </main>
     );

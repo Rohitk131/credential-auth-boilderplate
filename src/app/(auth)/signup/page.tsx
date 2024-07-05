@@ -1,7 +1,7 @@
-import SignupCard from '@/components/SignupCard';
+import SignupCard from '@/components/SignUpSection';
 export default function Signup() {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <main className="">
         <SignupCard />
       </main>
     );

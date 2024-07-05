@@ -4,11 +4,6 @@ import { Label } from './ui/label';
 import { Input } from './ui/input';
 import { cn } from '@/utils/cn';
 import { useRouter } from 'next/navigation';
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from '@tabler/icons-react';
 
 export default function SignupFormDemo() {
   const [firstName, setFirstName] = useState('');

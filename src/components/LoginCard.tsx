@@ -20,7 +20,7 @@ export default function SigninForm() {
     });
 
     if (response.ok) {
-      router.push('/');
+      router.push('/home');
     } else {
       const data = await response.json();
       alert(data.message);
